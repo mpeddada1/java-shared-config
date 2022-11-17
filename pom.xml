@@ -791,6 +791,7 @@
           <scope>test</scope>
         </dependency>
 
+      <!--  Update to latest version-->
         <dependency>
           <groupId>org.graalvm.buildtools</groupId>
           <artifactId>junit-platform-native</artifactId>
@@ -818,6 +819,7 @@
           </plugin>
 
           <plugin>
+            <!--  Update to latest version-->
             <groupId>org.graalvm.buildtools</groupId>
             <artifactId>native-maven-plugin</artifactId>
             <version>0.9.17</version>
