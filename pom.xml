@@ -1,7 +1,5 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-shared-config</artifactId>
@@ -691,10 +689,10 @@
         <docletPath>${env.KOKORO_GFILE_DIR}/${docletName}.jar</docletPath>
         <outputpath>${project.build.directory}/docfx-yml</outputpath>
         <projectname>${project.artifactId}</projectname>
-        <excludeclasses></excludeclasses>
-        <excludePackages></excludePackages>
+        <excludeclasses/>
+        <excludePackages/>
         <source>8</source>            
-        <sourceFileExclude></sourceFileExclude>
+        <sourceFileExclude/>
       </properties>
       <build>
         <plugins>
@@ -796,7 +794,7 @@
             </dependencies>
             <configuration>
               <!-- Include all tests during native image testing. -->
-              <excludes combine.self="override" />
+              <excludes combine.self="override"/>
               <includes>
                 <include>**/IT*.java</include>
                 <!-- Enable unit tests in generated libraries for native image testing. -->
@@ -808,7 +806,7 @@
           <plugin>
             <groupId>org.graalvm.buildtools</groupId>
             <artifactId>native-maven-plugin</artifactId>
-            <version>0.9.20</version>
+            <version>0.9.12</version>
             <extensions>true</extensions>
             <executions>
               <execution>
